@@ -1,4 +1,4 @@
-FROM python:3.8.16
+FROM tiangolo/uvicorn-gunicorn:python3.8
 
 WORKDIR /code
 
