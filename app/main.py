@@ -24,5 +24,5 @@ def home():
 @app.post("/predict", response_model=PredictionOut)
 def predict(input_text: TextIn):
     sentiment = predict_sentiment(input_text.text)
-    print(type(sentiment))
+
     return {"sentiment": sentiment}
