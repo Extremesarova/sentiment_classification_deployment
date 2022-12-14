@@ -1,5 +1,14 @@
 # Sentiment Classifier with FastAPI and Docker
 
+## 0. Clone this repository
+
+And change the directory:
+
+```bash
+git clone https://github.com/Extremesarova/sentiment_classification_deployment.git
+cd sentiment_classification_deployment
+```
+
 ## 1. Download the model
 
 With this [link](https://disk.yandex.ru/d/1ImXpmv0ZUftxA) and place it inside `/app/model` directory.
