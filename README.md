@@ -1,4 +1,4 @@
-# Sentiment Classifier with FastAPI and Docker
+# Sentiment Classifier Deployment with FastAPI and Docker
 
 ## 0. Clone this repository
 
