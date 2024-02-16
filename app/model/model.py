@@ -1,5 +1,6 @@
 import pickle
 from pathlib import Path
+
 import pgzip
 
 __version__ = "0.4.0"

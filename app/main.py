@@ -4,7 +4,6 @@ from pydantic import BaseModel
 from app.model.model import __version__ as model_version
 from app.model.model import predict_sentiment
 
-
 app = FastAPI()
 
 
