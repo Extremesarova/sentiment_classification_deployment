@@ -130,3 +130,6 @@ dmypy.json
 
 # Models
 *.pkl
+
+#macOS stuff
+.DS_Store

@@ -11,32 +11,35 @@ cd sentiment_classification_deployment
 
 ## 1. Download the model
 
-With this [link](https://disk.yandex.ru/d/1ImXpmv0ZUftxA) and place it inside `/app/model` directory.
+Using this [link](https://disk.yandex.ru/d/ATF-ZX3ERWBu6Q) (two files: vectorizer and classifier) and place it inside `/app/model` directory.
 
-## 2. Create Docker container
+## 2. Create Docker container and run it
 
 ```bash
-docker build -t sentiment_classification-app:0.1.0 .
-docker run -p 80:80 sentiment_classification-app:0.1.0
+docker build -t sentiment_classification-app:0.4.0 .
+docker run -p 80:80 sentiment_classification-app:0.4.0
 ```
 
 ## 3. Open browser
 
-With this link [http://0.0.0.0:80](http://0.0.0.0:80) to check that everything is okay:
+Using this [link](http://localhost) to check that everything is okay:
 
 ```json
-{"health_check":"OK","model_version":"0.1.0"}
+{
+    "health_check":"OK", 
+    "model_version":"0.1.0"
+}
 ```
 
 To get the prediction:
 
-1. Open webpage using this link [0.0.0.0/docs/predict](http://0.0.0.0/docs#/default/predict_predict_post).
+1. Open webpage using this [link](http://localhost/docs#/default/predict_predict_post).
 2. Press "Try it out".
 3. Replace `string` inside the form with your text containing sentiment in Russian:
 
     ```json
     {
-    "text": "string"
+        "text": "string"
     }
     ```
 
@@ -45,10 +48,9 @@ To get the prediction:
 
     ```json
     {
-    "sentiment": {
-        "negative": 0.13412402064162648,
-        "neutral": 0.2727429156861964,
-        "positive": 0.5931330636721771
+        "sentiment": {
+            "negative": 0.6240637133186361,
+            "positive": 0.3759362866813639
         }
     }
     ```
