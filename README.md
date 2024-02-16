@@ -27,7 +27,7 @@ Using this [link](http://localhost) to check that everything is okay:
 ```json
 {
     "health_check":"OK", 
-    "model_version":"0.1.0"
+    "model_version":"0.4.0"
 }
 ```
 
